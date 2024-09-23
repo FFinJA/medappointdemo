@@ -53,6 +53,9 @@ public class AdminController {
         User user = userRepository.findByEmail(email);
         model.addAttribute("user", user);
 
+        String homeLink = "/admins/";
+        model.addAttribute("homeLink", homeLink);
+
         String photo = "Patient_1726973794.png";
         String resignedUrl = s3Service.generateUrl(photo, HttpMethod.GET);
         System.out.println(resignedUrl);
