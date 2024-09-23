@@ -155,7 +155,8 @@ Example entries for one day, both team members:
 2. Plan until next Scrum
 - Fix the bugs.
 3. Need assistance / figure things out
-- 
+-Redirection errors.
+
 2024/09/23 Yunting Xie
 1. Done / not done since last scrum:
 - Already optimize all templates
@@ -168,9 +169,9 @@ Example entries for one day, both team members:
 
 2024/09/23 Fei Yang
 1. Done since last scrum
-- 
+- Fix some redirection errors.
 2. Plan until next Scrum
-- 
+- Part of the docutmentation.
 3. Need assistance / figure things out
 - 
 
