@@ -19,11 +19,11 @@ Example entries for one day, both team members:
 
 2024/09/13 Fei Yang
 1. Done since last scrum
-- 
+- Some endpoints like view appointments in patient roele
 2. Plan until next Scrum
-- 
+- Finish the login and resigeter endpoints.
 3. Need assistance / figure things out
-- 
+- Security setting.
 
 2024/09/14-15 Yunting Xie
 1. Done / not done since last scrum:
@@ -40,9 +40,9 @@ Example entries for one day, both team members:
 
 2024/09/14-15 Fei Yang
 1. Done since last scrum
-- 
+-  The login endpoint.
 2. Plan until next Scrum
-- 
+-  The register endpoint.
 3. Need assistance / figure things out
 - 
 2024/09/16 Yunting Xie
@@ -57,11 +57,11 @@ Example entries for one day, both team members:
 
 2024/09/16 Fei Yang
 1. Done since last scrum
-- 
+- The register endpoint, the view patient appointments endpoint.
 2. Plan until next Scrum
-- 
+- The patient make new appointment endpoint.
 3. Need assistance / figure things out
-- 
+- The data serialization and sort.
 
 2024/09/17 Yunting Xie
 1. Done / not done since last scrum:
@@ -78,9 +78,9 @@ Example entries for one day, both team members:
 
 2024/09/17 Fei Yang
 1. Done since last scrum
-- 
+- The patient make new appointment endpoint.
 2. Plan until next Scrum
-- 
+- The admin view appointments endpoint.
 3. Need assistance / figure things out
 - 
 
@@ -98,9 +98,9 @@ Example entries for one day, both team members:
 
 2024/09/18 Fei Yang
 1. Done since last scrum
-- 
+- The admin view appointments endpoint, and part of management of availability.
 2. Plan until next Scrum
-- 
+- Finish the admin management of availability.
 3. Need assistance / figure things out
 - 
 
@@ -117,9 +117,9 @@ Example entries for one day, both team members:
 
 2024/09/19 Fei Yang
 1. Done since last scrum
-- 
+- The admin management of availability, one endpoint for amdin statistics.
 2. Plan until next Scrum
-- 
+- The admin statistics module. And the admin email module.
 3. Need assistance / figure things out
 - 
 2024/09/20 Yunting Xie
@@ -134,9 +134,9 @@ Example entries for one day, both team members:
 
 2024/09/20 Fei Yang
 1. Done since last scrum
-- 
+- The doctor management of appointment's status, and the upload file endpoint.
 2. Plan until next Scrum
-- 
+- The admin email module.
 3. Need assistance / figure things out
 - 
 
@@ -151,8 +151,8 @@ Example entries for one day, both team members:
 
 2024/09/21-2024/09/22 Fei Yang
 1. Done since last scrum
-- 
+- The admin email module.
 2. Plan until next Scrum
-- 
+- Fix the bugs.
 3. Need assistance / figure things out
-- 
+- The redirection error.
