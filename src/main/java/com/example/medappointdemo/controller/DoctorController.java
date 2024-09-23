@@ -61,6 +61,9 @@ public class DoctorController {
         if (doctorOptional.isPresent()) {
             model.addAttribute("user", doctorOptional.get());
 
+            String homeLink = "/doctors/";
+            model.addAttribute("homeLink", homeLink);
+
             String photo = doctorOptional.get().getPhoto();
             if (photo == null || photo.isEmpty()) {
                 photo = "Patient_1726973794.png";

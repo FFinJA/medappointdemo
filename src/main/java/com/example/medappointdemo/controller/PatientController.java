@@ -56,6 +56,9 @@ public class PatientController {
         User user = userRepository.findByEmail(email);
         model.addAttribute("user", user);
 
+        String homeLink = "/patients/";
+        model.addAttribute("homeLink", homeLink);
+
         String photo = user.getPhoto();
         if (photo == null || photo.isEmpty()) {
             photo = "Patient_1726973794.png";
