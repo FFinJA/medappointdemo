@@ -262,7 +262,7 @@ public class PatientController {
 
             model.addAttribute("message", "Your appointment has been saved！");
 
-            return "redirect:/patients/viewappointments" + patient.getId();
+            return "redirect:/patients/newappointment";
 
         } catch (DateTimeParseException e) {
             model.addAttribute("error", "Invalid date format.");
