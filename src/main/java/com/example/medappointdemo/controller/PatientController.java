@@ -261,7 +261,7 @@ public class PatientController {
 
             availabilityService.saveAvailability(availability);
 
-            redirectAttributes.addFlashAttribute("message","Your appointment has bee saved.");
+            redirectAttributes.addFlashAttribute("success","Your appointment has bee saved.");
             return "redirect:/patients/viewappointments";
         } catch (DateTimeParseException e) {
 
