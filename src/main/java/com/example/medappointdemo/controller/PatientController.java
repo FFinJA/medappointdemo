@@ -16,6 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.security.Principal;
 import java.time.LocalDate;
@@ -214,8 +215,8 @@ public class PatientController {
             @RequestParam("appointmentDate") String date,
             @RequestParam("appointmentTime") String time,
             Principal principal,
-            Model model
-    ) {
+            Model model,
+            RedirectAttributes redirectAttributes) {
         try {
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
@@ -260,16 +261,16 @@ public class PatientController {
 
             availabilityService.saveAvailability(availability);
 
-            model.addAttribute("message", "Your appointment has been saved！");
-
+            redirectAttributes.addFlashAttribute("message","Your appointment has bee saved.");
             return "redirect:/patients/newappointment";
-
         } catch (DateTimeParseException e) {
-            model.addAttribute("error", "Invalid date format.");
-            return "patient-newappointment"; 
+
+            redirectAttributes.addFlashAttribute("error","Invalid date format.");
+            return "redirect:/patients/newappointment";
         } catch (Exception e) {
-            model.addAttribute("error", "Something went wrong.");
-            return "patient-newappointment"; 
+
+            redirectAttributes.addFlashAttribute("error","Something went wrong.");
+            return "redirect:/patients/newappointment";
         }
     }
 
