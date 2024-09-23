@@ -262,7 +262,7 @@ public class PatientController {
             availabilityService.saveAvailability(availability);
 
             redirectAttributes.addFlashAttribute("message","Your appointment has bee saved.");
-            return "redirect:/patients/newappointment";
+            return "redirect:/patients/viewappointments";
         } catch (DateTimeParseException e) {
 
             redirectAttributes.addFlashAttribute("error","Invalid date format.");
